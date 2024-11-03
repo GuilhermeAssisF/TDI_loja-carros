@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: #b2b2b2;
+}
+
+.card_veiculo{
+    background: #111;
+    padding: 10px 20px 50px 40px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.texto_card_veiculo{
+    padding-bottom: 20px;
+}
+
+#palavra_amarela{
+    color: #febe01;
+}
+
+#botao_amarelo{
+    margin-top: 100px;
+    background: #febe01;
+    padding: 15px 35px;
+    text-align: center;
+    border-radius: 4px;
+    color: #332200;
+    font-weight: 600;
+}
+
