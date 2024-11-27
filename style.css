@@ -2,16 +2,49 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2em;
+ul{
+    margin: 0;
 }
 
-header img{
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.logo_header{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo_header img{
     border-radius: 50%;
-    max-width: 300px;
+    max-width: 90px;
+    border: 4px solid rgb(0, 150, 130);
+}
+
+.itens_cabecalho{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.itens_cabecalho a{
+    text-decoration: none;
+    color: azure;
+    background: rgb(0, 150, 130);
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: background 1s;
+}
+
+.itens_cabecalho a:hover{
+    background-color: #febe01;
 }
 
 h2{
@@ -22,6 +55,8 @@ h2{
 p{
     color: #b2b2b2;
 }
+
+
  
 main{
     display: flex;
@@ -39,17 +74,22 @@ section{
 .card_veiculo{
     background: #111;
     padding: 20px 20px 20px 20px;
-    width: 30vw;
+    width: 40vw;
     margin-bottom: 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    transition: 200ms linear; 
+}
+
+.card_veiculo:hover{
+    transform: scale(1.02);
 }
 
 .card_veiculo img{
-    width: 230px;
+    width: 300px;
     height: 220px;
     object-fit: fill;
     border-radius: 15px;
@@ -75,5 +115,12 @@ section{
     color: #332200;
     font-weight: 600;
     margin-top: 20px;
+    transition: background 2s;
+    transition: color 1s;
+}
+
+.texto_card_veiculo a:hover{
+    color: white;
+    background-color: rgb(0, 150, 130);
 }
 
