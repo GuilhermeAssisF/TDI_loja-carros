@@ -109,7 +109,7 @@ section{
 
 .texto_card_veiculo a{
     background: #febe01;
-    padding: 15px 35px;
+    padding: 1rem 1rem;
     text-align: center;
     border-radius: 4px;
     color: #332200;
@@ -117,10 +117,49 @@ section{
     margin-top: 20px;
     transition: background 2s;
     transition: color 1s;
+    font-size: 1rem;
 }
 
 .texto_card_veiculo a:hover{
     color: white;
     background-color: rgb(0, 150, 130);
+}
+
+@media (max-width:1024px){
+
+    .card_veiculo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto_card_veiculo{
+        text-align: center;
+    }
+
+    .itens_cabecalho{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:530px){
+    
+    header, .logo_header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens_cabecalho{
+        font-size: 0.9rem;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_veiculo{
+        width: 80vw;
+    }
 }
 
